@@ -80,3 +80,30 @@ while(a>=p):
     a=a-(s)*p+(((s%10)*10)+s//10)*p
     p*=100
 print(a)
+
+
+
+array[array[i]] program
+
+
+a=list(map(int,input().split()))
+for i in range(0,len(a)):
+    a[i]=(a[a[i]]%len(a))*len(a)+a[i]
+    print(a[i],end=" ")
+    
+    
+    or
+    
+    
+#include<stdio.h>
+int main(){
+    int n,a[100];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+        scanf("%d",&a[i]);
+    for(int i=0;i<n;i++)
+        a[i]=(a[a[i]]%n)*n+a[i];
+    for(int i=0;i<n;i++)
+        printf("%d",a[i]/n);
+    return 0;
+}
