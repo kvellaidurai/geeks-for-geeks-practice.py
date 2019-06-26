@@ -23,3 +23,33 @@ for i in range(len(a)):
 print(*a)
         
     
+reverse a number without using modulo
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int n,p=0,s;
+    int pow=1;
+    scanf("%d",&n);
+    while(n>=pow){
+        s=(n/pow)%10;
+        p=p*10+s;
+        n=n/10;
+    }
+    printf("%d",p);
+}
+
+
+remove the duplicates except space
+
+s=input()
+l=[]
+m=[]
+for i in s:
+    l.append(i)
+for j in l:
+    if(j not in m and j!=" "):
+        m.append(j)
+    if(j==" "):
+        m.append(j)
+print(*m)
