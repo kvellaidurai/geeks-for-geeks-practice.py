@@ -69,3 +69,14 @@ while(a>=p):
     v=s*p+v
     p*=10
 print(a,v)
+
+
+swap alternate elements
+
+a=int(input())
+p=1
+while(a>=p):
+    s=(a//p)%100
+    a=a-(s)*p+(((s%10)*10)+s//10)*p
+    p*=100
+print(a)
