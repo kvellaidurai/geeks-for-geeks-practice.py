@@ -53,3 +53,19 @@ for j in l:
     if(j==" "):
         m.append(j)
 print(*m)
+
+
+replace the digit with another digit without using string,lists,arrays
+
+a=int(input())
+r=int(input())
+d=int(input())
+p=1
+v=0
+while(a>=p):
+    s=(a//p)%10
+    if(s==r):
+        s=d
+    v=s*p+v
+    p*=10
+print(a,v)
