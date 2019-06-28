@@ -124,5 +124,54 @@ for i in range(n):
                 if(i==man[j] and emp[j]!=man[j]):
                     print(emp[j],"directly manages",end=" ")
             print()
-		
+	
+
+find the occurence of an element(encode)
+
+#include<stdio.h>
+int main(){
+    char str[1000];
+    int count=0,i=0;
+    scanf("%s",str);
+    while(str[i]){
+        count++;
+        if(str[i]!=str[i+1]){
+            printf("%d%c",count,str[i]);
+            count=0;}
+            i++;
+        }
+    }
+
+
+fibonacci and prime sequence
+
+#include<stdio.h>
+int main(){
+    int count=0,val=4;
+    if(n==1)return 2;
+    if(n==2)return 3;
+    for(count=2;count<n;val++){
+        if(val%2){
+            int s=(int)sqrt(val);
+            int flag=0;
+            for(int fact=3;fact<=s;fact+=2)
+            if(val%fact==0){
+                flag=1;
+                break;}
+                if(flag==0) count++;}}
+                return val-1;
+}
+int func1(int n){
+    if(n<=2) return 1;
+    return func1(n-1)+func2(n-2);
+}
+int main(){
+    int num=0;
+    scanf("%d",&num);
+    printf("%d",num%2?func1((num+1)/2):func2(num/2);
+    return 0;
+}
+            
+
+
 		
