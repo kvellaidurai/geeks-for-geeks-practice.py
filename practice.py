@@ -172,6 +172,35 @@ int main(){
     return 0;
 }
             
+	   
+	   
+	   
+whos the closest
+	   
+	from itertools import permutations 
+a=int(input())
+b=int(input())
+l1=[]
+c=[int(d) for d in str(a)]
+d=[int(d) for d in str(b)]
+d2="".join(str(x) for x in d)
+perm = permutations(c)
+for i in list(perm):
+    e=list(i)
+    g="".join(str(x) for x in e)
+    if(g>=d2):
+        f=int(g)-int(d2)
+        mini=10000000
+        l=[]
+        if(f<mini):
+            mini=f
+            l.append(g)
+        l1.append(l)
+if len(l1)>0:
+    print(*l1[0])
+else:
+    print("-1")
+            
 
 
 		
